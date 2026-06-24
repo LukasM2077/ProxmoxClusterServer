@@ -32,13 +32,15 @@ Downloaded Proxmox ISO and flashed it on a usb with balena etcher. Booted from t
 
   chose a drive to install the OS on. Selected the correct network and managment interface. Assigned a hostname, IP, gateway, and subnet. Review my selections and run the install.
 
-  - Configuration
+- Configuration
  
     Logged into my Proxmox web interface, disabled enterprise repositories, and added a no subscription repository. Used Proxmox post install script:
     
      [bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/pve/post-pve-install.sh)"]
 
     Updated and restarted Proxmox.
+
+![image_alt](https://github.com/LukasM2077/ProxmoxClusterServer/blob/main/images/Screenshot%202026-06-24%20173419.png?raw=true)
 
 ## Issues and solutions
 
