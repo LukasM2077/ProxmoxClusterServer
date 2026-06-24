@@ -19,15 +19,17 @@ This project documents my Proxmox homelab cluster used for learning virtualizati
 | Node 1 | Intel I7 8700 | 16GB | 500GB SSD |
 | Node 2 | Intel I9 13900KF | 64GB | 1TB SSD |
 
-##setup
+## Setup
 
 - Downloadeed Proxmox
   
 Downloaded Proxmox ISO and flashed it on a usb with balena etcher. Booted from the USB to start the instaliation process.
 
+
 - Instaliation process
 
   chose a drive to install the OS on. Selected the correct network and managment interface. Assigned a hostname, IP, gateway, and subnet. Review my selections and run the install.
+
 
   - Configuration
  
@@ -37,6 +39,7 @@ Downloaded Proxmox ISO and flashed it on a usb with balena etcher. Booted from t
 
     Updated and restarted Proxmox.
 
+
 ## Issues and solutions
 
 - Web interface not working
@@ -44,7 +47,20 @@ Downloaded Proxmox ISO and flashed it on a usb with balena etcher. Booted from t
   Solutions: Ethernet was required and the IP was taken by another machine
   
 ## Cluster setup
-    -
+- create cluster
+
+  Clicked on Datacenter in node 1 and create cluster, named the cluster, and created it.
+
+- Combining the nodes
+
+  Got the join information on the new cluster and copied it. went to node 2's web interface and clicked on join cluster, pasted the join info, entered the password for node 1, and entered the IP. The nodes are now joined in the cluster.
+
+## Issues and solutions
+
+- Error host already has virtual guests
+
+  Solution: shut down and deleted a test VM I installed on node 2
+  
 ## Services
 
 - Proxmox VE
