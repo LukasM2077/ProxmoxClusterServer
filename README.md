@@ -57,9 +57,11 @@ Downloaded Proxmox ISO and flashed it on a usb with balena etcher. Booted from t
 
   Got the join information on the new cluster and copied it. went to node 2's web interface and clicked on join cluster, pasted the join info, entered the password for node 1, and entered the IP. The nodes are now joined in the cluster.
 
+![image_alt](https://github.com/LukasM2077/ProxmoxClusterServer/blob/main/images/Screenshot%202026-06-24%20174543.png?raw=true)
+
 ## Issues and solutions
 
-- Error host already has virtual guests
+- Error: host already has virtual guests
 
   Solution: shut down and deleted a test VM I installed on node 2
   
