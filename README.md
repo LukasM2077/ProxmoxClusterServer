@@ -23,14 +23,14 @@ This project documents my Proxmox homelab cluster used for learning virtualizati
 
 ## Setup
 
-- Downloadeed Proxmox
+- Downloaded Proxmox
   
-Downloaded Proxmox ISO and flashed it on a usb with balena etcher. Booted from the USB to start the instaliation process.
+Downloaded Proxmox ISO and flashed it on a usb with balena etcher. Booted from the USB to start the installation process.
 
 
-- Instaliation process
+- Installation process
 
-  chose a drive to install the OS on. Selected the correct network and managment interface. Assigned a hostname, IP, gateway, and subnet. Review my selections and run the install.
+  chose a drive to install the OS on. Selected the correct network and management interface. Assigned a hostname, IP, gateway, and subnet. Review my selections and run the install.
 
 - Configuration
  
@@ -68,9 +68,6 @@ Downloaded Proxmox ISO and flashed it on a usb with balena etcher. Booted from t
 ## Services
 
 - Proxmox VE
-- Docker
-- Nextcloud
-- Tailscale
 - Linux VMs
 - Post script -- https://community-scripts.org/scripts/post-pve-install
 
