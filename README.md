@@ -19,6 +19,8 @@ This project documents my Proxmox homelab cluster used for learning virtualizati
 | Node 1 | Intel I7 8700 | 16GB | 500GB SSD |
 | Node 2 | Intel I9 13900KF | 64GB | 1TB SSD |
 
+![image_alt](https://github.com/LukasM2077/ProxmoxClusterServer/blob/main/images/Screenshot%202026-06-24%20164418.png?raw=true)
+
 ## Setup
 
 - Downloadeed Proxmox
@@ -30,7 +32,6 @@ Downloaded Proxmox ISO and flashed it on a usb with balena etcher. Booted from t
 
   chose a drive to install the OS on. Selected the correct network and managment interface. Assigned a hostname, IP, gateway, and subnet. Review my selections and run the install.
 
-
   - Configuration
  
     Logged into my Proxmox web interface, disabled enterprise repositories, and added a no subscription repository. Used Proxmox post install script:
@@ -38,7 +39,6 @@ Downloaded Proxmox ISO and flashed it on a usb with balena etcher. Booted from t
      [bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/pve/post-pve-install.sh)"]
 
     Updated and restarted Proxmox.
-
 
 ## Issues and solutions
 
